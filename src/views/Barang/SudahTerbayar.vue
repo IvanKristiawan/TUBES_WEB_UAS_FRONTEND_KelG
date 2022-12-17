@@ -1,9 +1,23 @@
 <template>
-  <h1>Barang sudah terbayar</h1>
+  <div style="display: flex; justify-content: center">
+    <div
+      style="
+        background-color: green;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+      "
+    >
+      <h4 style="color: white">
+        Barang Sudah Terbayar
+        <i class="bi bi-bag-check"></i>
+      </h4>
+    </div>
+  </div>
 
-  <form @submit.prevent="goHome">
-    <button type="submit" class="btn btn-primary">Home</button>
-  </form>
+  <router-link style="margin-left: 5px" :to="{ name: 'components.home' }"
+    >Home</router-link
+  >
 </template>
 
 <script>
