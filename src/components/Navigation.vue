@@ -63,13 +63,48 @@
       </div>
     </div>
   </nav>
-  <main>
+  <main style="min-height: 100vh; border: 0.25px solid black">
     <router-view></router-view>
   </main>
+
+  <footer class="absolute-bottom" style="background-color: aquamarine">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      <a
+        class="bi bi-instagram"
+        href="#!"
+        role="button"
+        style="font-size: 40px; color: #dd4b39; padding-right: 3cm"
+      >
+      </a>
+
+      <a
+        class="bi bi-facebook"
+        href="#!"
+        role="button"
+        style="font-size: 40px; color: lightskyblue; padding-right: 3cm"
+      >
+      </a>
+
+      <a
+        class="bi bi-twitter"
+        href="#!"
+        role="button"
+        style="font-size: 40px; color: lightskyblue; padding-right: 3cm"
+      >
+      </a>
+      <a style="padding-right: 3cm"> (nomor telepon) </a>
+      <a style="padding-right: 3cm">about us</a>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3)">
+      E-Commerce Web by Kelompok G
+    </div>
+    <!-- Copyright -->
+  </footer>
 </template>
     
     <script>
-import { reactive, ref, onMounted } from "vue";
+import { reactive, onMounted } from "vue";
 export default {
   setup() {
     const user = reactive({

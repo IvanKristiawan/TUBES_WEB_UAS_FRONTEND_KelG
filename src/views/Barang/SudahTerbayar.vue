@@ -16,7 +16,7 @@ export default {
     const router = useRouter();
     function goHome() {
       router.push({
-        name: "components.home",
+        name: "barang.sudahTerbayar",
       });
     }
     //return
